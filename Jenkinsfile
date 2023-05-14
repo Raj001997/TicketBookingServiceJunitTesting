@@ -4,7 +4,7 @@ pipeline {
         stage('git repo & clean') {
             steps {
                 //sh "sudo su"
-               sh "rm -rf TicketBookingServiceJunitTesting"
+               //sh "rm -rf TicketBookingServiceJunitTesting"
                 sh "git clone https://github.com/kishancs2020/TicketBookingServiceJunitTesting.git"
                 sh "mvn clean -f TicketBookingServiceJunitTesting"
             }
